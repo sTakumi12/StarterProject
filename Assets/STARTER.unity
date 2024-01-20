@@ -1366,6 +1366,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6930377518113290031, guid: 4275f20892f91b348b3163e2f8e07821, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 704865367}
     - target: {fileID: 6961818086416054146, guid: 4275f20892f91b348b3163e2f8e07821, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -2884,8 +2888,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 0010801dc51177648bc78589aec7a6cc, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -10588,6 +10592,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6930377518113290031, guid: 4275f20892f91b348b3163e2f8e07821, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 704865367}
     - target: {fileID: 6961818086416054146, guid: 4275f20892f91b348b3163e2f8e07821, type: 3}
       propertyPath: m_RootOrder
       value: 7
