@@ -9,7 +9,7 @@ public class CountdownTimer : MonoBehaviour
     public Text winText;
     
     [SerializeField] private AudioSource tickingSoundEffect;
-
+    [SerializeField] private AudioSource yaySoundEffect;
     [SerializeField] Text countdownText;
     // Start is called before the first frame update
     void Start()
@@ -30,7 +30,7 @@ public class CountdownTimer : MonoBehaviour
             currentTime = 0;
             winText.text = "You Win!";
             tickingSoundEffect.Stop();
-            Time.timeScale = 1;
+            yaySoundEffect.Play();
         }
     }
 }
