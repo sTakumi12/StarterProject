@@ -10,6 +10,7 @@ public class CountdownTimer : MonoBehaviour
     public GameManagerScript gameManager;
     [SerializeField] private AudioSource tickingSoundEffect;
     [SerializeField] Text countdownText;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +31,16 @@ public class CountdownTimer : MonoBehaviour
             winText.text = "You Win!";
             gameManager.winScreen();
             tickingSoundEffect.Stop();
+            StartCoroutine (SpawnDelay());
             
         }
-    }
+    }    
+    
+    private IEnumerator SpawnDelay()
+        {
+            yield return new WaitForSeconds(2);
+            Application.Quit();
+
+        }
+    
 }

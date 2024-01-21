@@ -7,6 +7,7 @@ public class GameManagerScript : MonoBehaviour
 {
     public GameObject gameOverUI;
     public GameObject winScreenUI;
+    public GameObject player;
 
 
     // Start is called before the first frame update
@@ -34,5 +35,7 @@ public class GameManagerScript : MonoBehaviour
     public void winScreen()
     {
         winScreenUI.SetActive(true);
+        player.SetActive(false);
     }
+  
 }

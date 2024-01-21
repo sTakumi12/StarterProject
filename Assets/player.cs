@@ -52,6 +52,7 @@ public class player : MonoBehaviour
             gameManager.gameOver();
             isDead = true;
             gameObject.SetActive(false);
+            Destroy(whatIHit.gameObject);
         }
     }           
 }
