@@ -49,10 +49,9 @@ public class player : MonoBehaviour
     {
         if (whatIHit.tag == "enemy" || !isDead)
         {
-            Destroy(this.gameObject);
-            Debug.Log("Dead");
             gameManager.gameOver();
             isDead = true;
+            gameObject.SetActive(false);
         }
     }           
 }

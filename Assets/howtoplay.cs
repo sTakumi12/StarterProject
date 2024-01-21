@@ -10,7 +10,7 @@ public class howtoplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Time.timeScale = 0;
+        
         InvokeRepeating("Repeat", 0, 2);
     }
 
