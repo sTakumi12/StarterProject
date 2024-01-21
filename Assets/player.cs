@@ -16,7 +16,7 @@ public class player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerSpeed = 6f;
+        playerSpeed = 4f;
     }
 
     // Update is called once per frame
@@ -44,6 +44,7 @@ public class player : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, verticalScreenLimit, 0);
         }
+        
     }
      private void OnTriggerEnter2D(Collider2D whatIHit)
     {
